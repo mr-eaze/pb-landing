@@ -1,0 +1,156 @@
+.section{
+    height: 100vh;
+    position: relative;
+
+}
+
+nav{
+    background-color: #2abb9b;    
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    -o-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+
+}
+
+nav img{
+    max-width: 150px;
+    padding-bottom:10px;
+    padding-top:10px;
+    width: 100%;
+
+}
+
+
+/* =======ABOVE FOLD======= */
+
+#above-fold{
+    background-color: #2abb9b;
+    background-image: url('../img/leaf-pattern.png');
+    background-size: contain;
+
+}
+
+#above-fold h1{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+
+}
+
+
+/* =======PRODUCT====== */
+
+#product img {
+    max-width:340px;
+
+}
+
+/* =======CONTACT====== */
+
+#contact img{
+    display: block;
+    margin: 0 auto;
+    max-width:250px;
+
+}
+
+#contact p{
+    color: #6c6c6c;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+#contact .form-control{
+    border-color: #b8b8b8;
+    border-radius: 0;
+    margin-top:15px;
+    padding: .9rem;
+}
+
+#contact button.form-control{
+    background-color: #2abb9b;
+    border-color: transparent;
+    color: #fff;
+}
+
+/* =======HELPER======= */
+.roboto{
+    font-family: 'Roboto', Arial, sans-serif;
+
+}
+
+.abs-cent{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.white {
+    color: #fff;
+}
+
+.thin{
+    font-weight: 300;
+
+}
+
+.font-60{
+    font-size:60;
+
+}
+
+.transparent{
+    background-color: transparent;
+    
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+ }
+ 
+ :-ms-input-placeholder {  
+    text-align: center; 
+ }
+
+ @media screen and (min-width:445px){
+
+ }
+
+ @media screen and (min-width:768px){
+
+    nav img{
+        max-width: 140px;
+    
+    }
+
+    #above-fold h1{
+        font-size: 60px;
+    
+    }
+
+    #above-fold span{
+        display:block;
+    
+    }   
+ }
+
+ @media screen and (min-width:992px){
+
+ }
