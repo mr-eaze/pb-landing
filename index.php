@@ -20,8 +20,10 @@
             <div id="leaf"></div>
         </div>
         <div class="section" id="product">
-            <div class="container">
-                <img src="assets/img/pb-mobile-mockup.png" class="abs-cent" alt="">
+            <div class="container abs-cent">
+                <div class="d-flex flex-wrap flex-row pt-55">                
+                    <div class="col-12 offset-sm-2 col-sm-8 offset-md-3 col-md-6 offset-lg-4 col-lg-4" id="product-shot"></div>
+                </div>
             </div>
         </div>
         <div class="section" id="contact">

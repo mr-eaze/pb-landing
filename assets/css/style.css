@@ -14,6 +14,7 @@
     right: 10px;
     width: 60px;
     z-index: 11;
+
 }
 
 nav{
@@ -43,14 +44,6 @@ nav #container-fluid{
 
 }
 
-/* nav #leaf{
-    bottom: 10px;
-    height: 55px;
-    position: absolute;
-    right: 10px;
-    width: auto;
-} */
-
 
 /* =======ABOVE FOLD======= */
 
@@ -64,6 +57,7 @@ nav #container-fluid{
 #above-fold .container{
     height: 100%;
     position: relative;
+
 }
 
 #above-fold h1{
@@ -77,13 +71,14 @@ nav #container-fluid{
 
 /* =======PRODUCT====== */
 
-#product{
-    padding-top:55px;
-    
-}
-
-#product img {
-    max-width:340px;
+#product #product-shot {
+    background: url('../img/pb-mobile-mockup.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    max-height: 500px;
+    min-height: 400px;
 
 }
 
@@ -100,6 +95,7 @@ nav #container-fluid{
     color: #6c6c6c;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+
 }
 
 #contact .form-control{
@@ -165,8 +161,14 @@ nav #container-fluid{
 
 }
 
+.pt-55{
+    padding-top: 55px;
+
+}
+
 .white {
     color: #fff;
+
 }
 
 .thin{
@@ -188,24 +190,28 @@ nav #container-fluid{
     color: #b8b8b8 !important;
     font-weight: 300;
     text-align: center;
+
  }
  
  :-moz-placeholder { /* Firefox 18- */
     color: #b8b8b8 !important;
     font-weight: 300;
     text-align: center;  
+
  }
  
  ::-moz-placeholder {  /* Firefox 19+ */
     color: #b8b8b8 !important;
     font-weight: 300;
     text-align: center;  
+
  }
  
  :-ms-input-placeholder {  
     color: #b8b8b8 !important;
     font-weight: 300;
     text-align: center; 
+
  }
 
  @media screen and (min-width:445px){
@@ -220,16 +226,31 @@ nav #container-fluid{
     }
 
     #above-fold h1{
-        font-size: 60px;
+        font-size: 39px;
     
     }
 
     #above-fold span{
         display:block;
     
-    }   
+    } 
+
+    #product #product-shot{
+        min-height: 450px;
+
+    }
  }
 
  @media screen and (min-width:992px){
+     
+    #above-fold h1{
+        font-size: 53px;
+    
+    }
+
+    #product #product-shot{
+        min-height:500px;
+
+    }
 
  }
