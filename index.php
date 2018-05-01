@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="assets/css/jquery.fullpage.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <?php include (realpath(dirname(__FILE__)."/assets/layout/header.php")); ?>
