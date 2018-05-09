@@ -11,7 +11,7 @@
 nav{
     background-color: #66CC99;    
     left: 0;
-    position: absolute;
+    position: fixed;
     overflow: hidden;
     right: 0;
     z-index: 10;
@@ -21,6 +21,14 @@ nav{
     -webkit-transition-duration: 0.8s;
     transition-duration: 0.8s;
 
+}
+
+nav.active .logo{
+    color:#fff;
+}
+
+nav.active #nav-icon3 span{
+    background-color: #fff;
 }
 
 nav img{
@@ -59,11 +67,11 @@ nav #container-fluid{
 
 }
 #nav-icon3{
-    width: 40px;
+    width: 25px;
     height: 26px;
     position: relative;
-    top: 10px;
-    right: 10px;
+    top: 13px;
+    right: 0;
     float:right;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -73,14 +81,14 @@ nav #container-fluid{
     -moz-transition: .5s ease-in-out;
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
-    cursor: pointer;
+    cursor: pointer;    
     z-index: 100;
   }
   
 #nav-icon3 span{
     display: block;
     position: absolute;
-    height: 5px;
+    height: 3px;
     width: 100%;
     background: #66CC99;
     border-radius: 9px;
@@ -114,11 +122,11 @@ nav #container-fluid{
   }
   
   #nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
-    top: 10px;
+    top: 8px;
   }
   
   #nav-icon3 span:nth-child(4) {
-    top: 20px;
+    top: 16px;
   }
   
   #nav-icon3.open span:nth-child(1) {
@@ -157,8 +165,22 @@ nav #container-fluid{
     right: -100vw;
     color: white;
     background-color:black;
+    text-align: center;
 
   }
+
+  .body-snb .nav-side{
+    background-color: #66CC99
+}
+.body-cne .nav-side{
+    background-color: #55cbe7;
+}
+.body-bng .nav-side{
+    background-color: #666c99;
+}
+.body-enf .nav-side{
+    background-color: #f1cf5a;
+}
 
   .nav-side ul{
       padding-left: 0;
@@ -169,7 +191,7 @@ nav #container-fluid{
 
   }
 
-  .nav-side ul li a{
+  .nav-side a{
     color: white;
     text-align: center;
 
@@ -193,6 +215,10 @@ nav #container-fluid{
 
 #above-fold #hero, #above-fold #form-sub{
     height: 100vh;
+}
+
+#above-fold #hero{
+    min-height: 575px;
 }
 
 #above-fold .container{
@@ -448,6 +474,10 @@ nav #container-fluid{
 
 }
 
+.bg-white{
+    background-color:white;
+}
+
 .thin{
     font-weight: 300;
 
@@ -456,6 +486,10 @@ nav #container-fluid{
 .font-60{
     font-size:60;
 
+}
+
+.noScroll {
+    overflow: hidden;
 }
 
 .transparent{
@@ -523,6 +557,10 @@ nav #container-fluid{
     #product #product-shot{
         min-height: 450px;
 
+    }
+
+    .noScroll {
+        overflow: initial;
     }
  }
 
