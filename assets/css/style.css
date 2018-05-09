@@ -41,8 +41,9 @@ nav img{
 nav .logo{
     font-family: 'Roboto', sans-serif;
     font-size: 32px;
-    font-weight: 300;  
-    color: #66CC99
+    font-weight: 100;  
+    color: #66CC99;
+    cursor: default;
 }
 
 .body-snb .logo{
@@ -59,7 +60,7 @@ nav .logo{
 }
 
 nav .logo span {
-    font-weight: 500;
+    font-weight: 300;
 }
 
 nav #container-fluid{
@@ -230,8 +231,9 @@ nav #container-fluid{
 #above-fold h1{
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
-    font-weight: 300;
+    font-weight: 100;
     padding-left: 100px;
+    margin-bottom: 15px;
 
 }
 
@@ -251,9 +253,13 @@ nav #container-fluid{
 #above-fold h1 span span{
     display: none;
 }
+/* #above-fold h1 span{
+    display: none;
+} */
 #above-fold h1 span{
     position: absolute;
     left: 0;
+    font-weight: 300;
 }
 
 #above-fold #hero .phone{
@@ -354,6 +360,7 @@ nav #container-fluid{
 
 .email-input button{
     border: 0 solid transparent;
+    border-bottom: 1px solid #66CC99;
     color: #fff;
     float: left;
     width: 40%;
@@ -362,15 +369,19 @@ nav #container-fluid{
 
 .body-snb button{
     background-color: #66CC99;
+    border-bottom: 1px solid #66CC99;
 }
 .body-cne button{
     background-color: #55cbe7;
+    border-bottom: 1px solid #55cbe7;
 }
 .body-bng button{
     background-color: #666c99;
+    border-bottom: 1px solid #666c99;
 }
 .body-enf button{
     background-color: #f1cf5a;
+    border-bottom: 1px solid #f1cf5a;
 }
 /* =======PRODUCT====== */
 

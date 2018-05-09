@@ -7,8 +7,7 @@
     <title>PlantBase</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/jquery.fullpage.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -41,6 +40,7 @@
         <div class="col-12 col-md-6" id="form-sub">
             <div class="abs-cent">
                 <h1><span class="quote-container"><span>Find</span><span>Like</span><span>Share</span><span>Get</span></span> it.</h1>
+                <!-- <h1><span>Find</span><span>Like</span><span>Share</span><span>Get</span> it.</h1> -->
                 <form action="#" class="email-form">
                     <div class="email-input">
                     <input type="text" placeholder="E-Mail Address" name="email">
