@@ -4,52 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>PlantBase</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/jquery.fullpage.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118643687-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-118643687-1');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T9345G2');</script>
+    <!-- End Google Tag Manager -->
 </head>
 <body>
-    <?php include (realpath(dirname(__FILE__)."/assets/layout/header.php")); ?>
-    <div id="pbase">
-        <div class="section" id="above-fold">
-            <div class="container">
-                <h1 class="abs-cent">Discover <span>new vegan products,</span> <span>located <strong>near you.</strong></span></h1>
-            </div>
-            <div id="leaf"></div>
-        </div>
-        <div class="section" id="product">
-            <div class="container abs-cent">
-                <div class="d-flex flex-wrap flex-row pt-55">                
-                    <div class="col-12 offset-sm-2 col-sm-8 offset-md-3 col-md-6 offset-lg-4 col-lg-4" id="product-shot"></div>
-                </div>
-            </div>
-        </div>
-        <div class="section" id="contact">
-            <div class="container abs-cent">
-                <div class="flex-row d-flex flex-wrap">
-                    <div class="col-12 offset-sm-2 col-sm-8 offset-md-3 col-md-6 offset-lg-4 col-lg-4">
-                        <img src="assets/img/larger-logo.png" class="img-fluid" alt="">
-                        <p class="roboto text-center">sign up below to be notified for updates</p>
-                        <form action="">
-                            <input type="text" class="form-control" placeholder="first name">
-                            <input type="text" class="form-control" placeholder="last name">
-                            <input type="email" class="form-control" placeholder="e-mail address">
-                            <button class="form-control">sign up</button>
-                        </form>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9345G2"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="pbase" class="body-snb">
+            <?php include (realpath(dirname(__FILE__)."/assets/layout/header.php")); ?>
+    <div id="above-fold">
+        <div class="container-fluid">
+        <div class="d-flex flex-wrap h-100">
+        <div class="col-12 col-md-6" id="form-sub">
+            <div class="abs-cent">
+                <h1><span class="quote-container"><span>Find</span><span>Like</span><span>Share</span><span>Get</span></span> it.</h1>
+                <form action="#" class="email-form">
+                    <div class="email-input">
+                    <input type="text" placeholder="E-Mail Address" name="email">
+                    <button id="submit-form">submit</button>
                     </div>
-                </div>
-            </div>
-            <?php include (realpath(dirname(__FILE__)."/assets/layout/footer.php")); ?>
+                </form>
             </div>
         </div>
+        <div class="col-12 col-md-6" id="hero">
+            <div class="abs-cent phone">
+                <div class="phone-1"></div>
+                <div class="phone-2"></div>
+                <div class="phone-3"></div>
+                <div class="phone-4"></div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
     <script src="//code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="assets/scripts/jquery.fullpage.min.js"></script>
+    <script src="assets/scripts/jquery.color.js"></script>
+    <script src="assets/scripts/jquery.serialize-object.min.js"></script>
     <script src="assets/scripts/scripts.js"></script>
 </body>
 </html>
