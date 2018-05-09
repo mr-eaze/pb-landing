@@ -11,6 +11,8 @@
 nav{
     background-color: #66CC99;    
     left: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
     position: fixed;
     overflow: hidden;
     right: 0;
@@ -340,6 +342,8 @@ nav #container-fluid{
     width: 60%;
     height:30px;
     padding: 10px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
@@ -361,6 +365,8 @@ nav #container-fluid{
 .email-input button{
     border: 0 solid transparent;
     border-bottom: 1px solid #66CC99;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
     color: #fff;
     float: left;
     width: 40%;
