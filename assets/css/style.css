@@ -73,7 +73,7 @@ nav #container-fluid{
     width: 25px;
     height: 26px;
     position: relative;
-    top: 13px;
+    top: 8px;
     right: 0;
     float:right;
     -webkit-transform: rotate(0deg);
@@ -218,6 +218,10 @@ nav #container-fluid{
 
 #above-fold #hero, #above-fold #form-sub{
     height: 100vh;
+}
+
+#above-fold #hero, #above-fold #form-sub .abs-cent{
+    min-width:250px;
 }
 
 #above-fold #hero{
@@ -469,6 +473,32 @@ nav #container-fluid{
 .footer ul li:nth-of-type(1) img{
     height: 29px;
 
+}
+
+.footer.footer-mobile a {
+    font-size: 22px;
+    color: #fdfdfd;
+}
+
+.footer.footer-mobile a:hover {
+    color: #fff;
+}
+
+.footer.footer-desktop a {
+    font-size: 22px;
+}
+
+.body-snb .footer.footer-desktop a{
+    color: #66CC99;
+}
+.body-cne .footer.footer-desktop a{
+    color: #55cbe7;
+}
+.body-bng .footer.footer-desktop a{
+    color: #666c99;
+}
+.body-enf .footer.footer-desktop a{
+    color: #f1cf5a;
 }
 
 /* =======HELPER======= */

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/jquery.fullpage.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">     
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -45,11 +46,13 @@
                 <!-- <h1><span>Find</span><span>Like</span><span>Share</span><span>Get</span> it.</h1> -->
                 <form action="#" class="email-form">
                     <div class="email-input">
-                    <input type="text" placeholder="E-Mail Address" name="email">
+                    <input type="text" placeholder="email" name="email">
                     <button id="submit-form">submit</button>
                     </div>
                 </form>
             </div>
+            <?php include (realpath(dirname(__FILE__)."/assets/layout/footer-desktop.php")); ?>
+
         </div>
         <div class="col-12 col-md-6" id="hero">
             <div class="abs-cent phone">
@@ -58,6 +61,8 @@
                 <div class="phone-3"></div>
                 <div class="phone-4"></div>
             </div>
+            <?php include (realpath(dirname(__FILE__)."/assets/layout/footer-mobile.php")); ?>
+
         </div>
         </div>
         </div>
