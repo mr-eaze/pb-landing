@@ -17,10 +17,10 @@
                 <div class="nav-side">
                     <div class="abs-cent col-10">
                         <h3>Our Mission</h3>
-                        <p>Helping people discover plant-based products we know they will love.</p>
+                        <p>Helping people discover the plant-based products we know they'll love.</p>
                         <br />
                         <h3>Contact</h3> 
-                        <p><a href="mailto:info@plantbase.io">info@plantbase.io</a></p>
+                        <p><a href="mailto:info@plantbase.app">info@plantbase.app</a></p>
                     </div>
                 </div>
         </div>
