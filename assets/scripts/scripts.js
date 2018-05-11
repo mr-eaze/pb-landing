@@ -1,10 +1,15 @@
 $(document).ready(function() {
     var hero    =   $('#hero').offset(),
         size    =   window.innerWidth;
-        window.addEventListener('resize', function(event){
-            hero    =   $('#hero').offset();
-            size    =   window.innerWidth;
-          });
+window.addEventListener('resize', function(event){
+    hero    =   $('#hero').offset();
+    size    =   window.innerWidth;
+
+    if (size > 768){
+        $('nav').removeClass('active');
+        console.log(size)
+    }
+  });
     $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
         $(this).toggleClass('open');
         if ($(this).hasClass('open')){
@@ -29,16 +34,14 @@ $(document).ready(function() {
     });
 
     $(function() {
-        if (size < 768){
         $(window).on("scroll", function() {
             if($(window).scrollTop() >= (hero.top - 50)) {
                  $("#navbar").addClass("active");
             } else {
-                //remove the background property so it comes transparent again (defined in your css)
                $("#navbar").removeClass("active");
             }
         });
-    }});
+    });
     
 
     (function() {
