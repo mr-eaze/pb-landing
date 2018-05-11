@@ -1,4 +1,4 @@
-<nav id="navbar" class="transparent">
+<nav id="navbar">
     <div class="container-fluid">
         <div class="flex-row d-flex flex-wrap">
             <div class="col-8 col-sm-4">
@@ -18,8 +18,7 @@
                     <div class="abs-cent col-10">
                         <h3>Our Mission</h3>
                         <p>Helping people discover plant-based products we know they will love.</p>
-                        <h3>About Us</h3>
-                        <p>We eat plants.<br/>We're product hunters. </br>We’re champions of what we find. <br/>We want to help others explore our world.</p> 
+                        <br />
                         <h3>Contact</h3> 
                         <p><a href="mailto:info@plantbase.io">info@plantbase.io</a></p>
                     </div>

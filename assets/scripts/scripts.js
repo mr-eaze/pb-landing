@@ -30,8 +30,8 @@ $(document).ready(function() {
 
     $(function() {
         $(window).on("scroll", function() {
-            if($(window).scrollTop() >= hero.top) {
-                $("#navbar").addClass("active");
+            if($(window).scrollTop() >= (hero.top - 50)) {
+                 $("#navbar").addClass("active");
             } else {
                 //remove the background property so it comes transparent again (defined in your css)
                $("#navbar").removeClass("active");
@@ -51,37 +51,37 @@ $(document).ready(function() {
             ++quoteIndex;
             if( size >= 992 ){
                 if ((quoteIndex % spans.length) == 0){
-                    $('#above-fold h1').animate({
+                    $('#above-fold h1.quote').animate({
                         'padding-left': '115px'
                     });
                 } else if ((quoteIndex % spans.length) == 1){
-                    $('#above-fold h1').animate({
+                    $('#above-fold h1.quote').animate({
                         'padding-left': '105px'
                     });
                 } else if ((quoteIndex % spans.length) == 2){
-                    $('#above-fold h1').animate({
+                    $('#above-fold h1.quote').animate({
                         'padding-left': '150px'
                     });
                 } else if ((quoteIndex % spans.length) == 3){
-                    $('#above-fold h1').animate({
+                    $('#above-fold h1.quote').animate({
                         'padding-left': '95px'
                     });
                 }
             } else if (size < 992){
                 if ((quoteIndex % spans.length) == 0){
-                    $('#above-fold h1').animate({
+                    $('#above-fold h1.quote').animate({
                         'padding-left': '90px'
                     });
                 } else if ((quoteIndex % spans.length) == 1){
-                    $('#above-fold h1').animate({
+                    $('#above-fold h1.quote').animate({
                         'padding-left': '80px'
                     });
                 } else if ((quoteIndex % spans.length) == 2){
-                    $('#above-fold h1').animate({
+                    $('#above-fold h1.quote').animate({
                         'padding-left': '110px'
                     });
                 } else if ((quoteIndex % spans.length) == 3){
-                    $('#above-fold h1').animate({
+                    $('#above-fold h1.quote').animate({
                         'padding-left': '75px'
                     });
                 }
@@ -130,6 +130,10 @@ $(document).ready(function() {
         dataType: "json",
         data: $form.serializeObject(),
         success: function(){
+            
+            $( ".form-container" ).fadeTo( "slow" , 0, function() {
+                $('.form-container').html('<h3>Thank you for your interest!</h3><p>Lorem ipsum whatever</p>').fadeTo("slow", 1);
+            });
         }
     });
     })

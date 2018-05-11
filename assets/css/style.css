@@ -9,23 +9,30 @@
 }
 
 nav{
-    background-color: #66CC99;    
+    background-color: #fff;    
     left: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
     position: fixed;
     overflow: hidden;
     right: 0;
     z-index: 10;
-    -o-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    -ms-transition-duration: 0.8s;
-    -webkit-transition-duration: 0.8s;
-    transition-duration: 0.8s;
 
 }
 
+.body-snb nav.active{
+    background-color: transparent
+}
+.body-cne nav.active{
+    background-color: transparent;
+}
+.body-bng nav.active{
+    background-color: transparent;
+}
+.body-enf nav.active{
+    background-color: transparent;
+}
+
 nav.active .logo{
+    background-color: transparent;
     color:#fff;
 }
 
@@ -46,6 +53,8 @@ nav .logo{
     font-weight: 100;  
     color: #66CC99;
     cursor: default;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 .body-snb .logo{
@@ -73,7 +82,7 @@ nav #container-fluid{
     width: 25px;
     height: 26px;
     position: relative;
-    top: 8px;
+    top: 15px;
     right: 0;
     float:right;
     -webkit-transform: rotate(0deg);
@@ -171,6 +180,9 @@ nav #container-fluid{
     text-align: center;
 
   }
+.nav-side h3, .nav-side p{
+    color: #fff;
+}
 
   .body-snb .nav-side{
     background-color: #66CC99
@@ -238,21 +250,24 @@ nav #container-fluid{
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
     font-weight: 100;
-    padding-left: 100px;
     margin-bottom: 15px;
 
 }
 
-.body-snb h1{
+#above-fold h1.quote{
+    padding-left: 100px;
+}
+
+.body-snb h1, .body-snb .form-container h3, .body-snb .form-container p{
     color: #66CC99;
 }
-.body-cne h1{
+.body-cne h1,.body-cne .form-container h3,.body-cne .form-container p{
     color: #55cbe7;
 }
-.body-bng h1{
+.body-bng h1,.body-bng .form-container h3,.body-bng .form-container p{
     color: #666c99;
 }
-.body-enf h1{
+.body-enf h1,.body-enf .form-container h3,.body-enf .form-container p{
     color: #f1cf5a;
 }
 
@@ -266,6 +281,11 @@ nav #container-fluid{
     position: absolute;
     left: 0;
     font-weight: 300;
+}
+
+#above-fold h3{
+    font-family: 'Roboto', sans-serif;
+
 }
 
 #above-fold #hero .phone{
@@ -535,6 +555,10 @@ nav #container-fluid{
 
 }
 
+.transparent{
+    background-color: transparent;
+}
+
 .font-60{
     font-size:60;
 
@@ -542,11 +566,6 @@ nav #container-fluid{
 
 .noScroll {
     overflow: hidden;
-}
-
-.transparent{
-    background-color: transparent;
-    
 }
 
 ::-webkit-input-placeholder {

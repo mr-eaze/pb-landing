@@ -42,14 +42,16 @@
         <div class="d-flex flex-wrap h-100">
         <div class="col-12 col-md-6" id="form-sub">
             <div class="abs-cent">
-                <h1><span class="quote-container"><span>Find</span><span>Like</span><span>Share</span><span>Get</span></span> it.</h1>
+                <h1 class="quote"><span class="quote-container"><span>Find</span><span>Like</span><span>Share</span><span>Get</span></span> it.</h1>
                 <!-- <h1><span>Find</span><span>Like</span><span>Share</span><span>Get</span> it.</h1> -->
-                <form action="#" class="email-form">
-                    <div class="email-input">
-                    <input type="text" placeholder="email" name="email">
-                    <button id="submit-form">submit</button>
-                    </div>
-                </form>
+                <div class="form-container">
+                    <form action="#" class="email-form">
+                        <div class="email-input">
+                        <input type="email" placeholder="email" name="email">
+                        <button id="submit-form">submit</button>
+                        </div>
+                    </form>
+                </div>
             </div>
             <?php include (realpath(dirname(__FILE__)."/assets/layout/footer-desktop.php")); ?>
 
