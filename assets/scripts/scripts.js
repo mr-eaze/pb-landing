@@ -29,6 +29,7 @@ $(document).ready(function() {
     });
 
     $(function() {
+        if (size < 768){
         $(window).on("scroll", function() {
             if($(window).scrollTop() >= (hero.top - 50)) {
                  $("#navbar").addClass("active");
@@ -37,7 +38,8 @@ $(document).ready(function() {
                $("#navbar").removeClass("active");
             }
         });
-    });
+    }});
+    
 
     (function() {
 
@@ -52,25 +54,25 @@ $(document).ready(function() {
             if( size >= 992 ){
                 if ((quoteIndex % spans.length) == 0){
                     $('#above-fold h1.quote').animate({
-                        'padding-left': '115px'
+                        'padding-left': '95px'
                     });
                 } else if ((quoteIndex % spans.length) == 1){
                     $('#above-fold h1.quote').animate({
-                        'padding-left': '105px'
+                        'padding-left': '88px'
                     });
                 } else if ((quoteIndex % spans.length) == 2){
                     $('#above-fold h1.quote').animate({
-                        'padding-left': '150px'
+                        'padding-left': '123px'
                     });
                 } else if ((quoteIndex % spans.length) == 3){
                     $('#above-fold h1.quote').animate({
-                        'padding-left': '95px'
+                        'padding-left': '78px'
                     });
                 }
             } else if (size < 992){
                 if ((quoteIndex % spans.length) == 0){
                     $('#above-fold h1.quote').animate({
-                        'padding-left': '90px'
+                        'padding-left': '85px'
                     });
                 } else if ((quoteIndex % spans.length) == 1){
                     $('#above-fold h1.quote').animate({
@@ -82,7 +84,7 @@ $(document).ready(function() {
                     });
                 } else if ((quoteIndex % spans.length) == 3){
                     $('#above-fold h1.quote').animate({
-                        'padding-left': '75px'
+                        'padding-left': '70px'
                     });
                 }
             }
