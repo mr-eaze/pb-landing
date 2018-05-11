@@ -238,16 +238,16 @@ nav #container-fluid{
     padding-left: 100px;
 }
 
-.body-snb h1, .body-snb .form-container h3, .body-snb .form-container p{
+.body-snb #form-sub{
     color: #66CC99;
 }
-.body-cne h1,.body-cne .form-container h3,.body-cne .form-container p{
+.body-cne #form-sub{
     color: #55cbe7;
 }
-.body-bng h1,.body-bng .form-container h3,.body-bng .form-container p{
+.body-bng #form-sub{
     color: #666c99;
 }
-.body-enf h1,.body-enf .form-container h3,.body-enf .form-container p{
+.body-enf #form-sub{
     color: #f1cf5a;
 }
 

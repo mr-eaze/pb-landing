@@ -135,6 +135,9 @@ window.addEventListener('resize', function(event){
         var email = $('.email-input input').val();
         if(!email.match(re)) {
             $('.email-input input').addClass('error');
+            if ($('p.error-message')){
+                $('p.error-message').remove();
+            }
             $('.email-input').after('<p class="error-message"><small>Please add a valid email address</small>');
             return false;
         }

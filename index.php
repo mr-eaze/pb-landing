@@ -47,7 +47,7 @@
                 <div class="form-container">
                     <form action="#" class="email-form">
                         <div class="email-input">
-                            <input type="email" placeholder="email" name="email" required>
+                            <input type="email" placeholder="email" name="email">
                         <button id="submit-form">submit</button>
                         </div>
                     </form>
