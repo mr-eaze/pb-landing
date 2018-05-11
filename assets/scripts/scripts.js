@@ -139,18 +139,21 @@ window.addEventListener('resize', function(event){
             }
             $('.email-input').after('<p class="error-message"><small>Please add a valid email address</small>');
             return false;
-        }
-    var jqxhr = $.ajax({
-        url: url,
-        method: "GET",
-        dataType: "json",
-        data: $form.serializeObject(),
-        success: function(){
-            
+        } else {
             $( "#form-sub .abs-cent" ).fadeTo( "slow" , 0, function() {
-                $('#form-sub .abs-cent').html('<h3>Thank you for your interest!</h3><p>More info coming soon...</p>').fadeTo("slow", 1);
+                
+            });
+            var jqxhr = $.ajax({
+                url: url,
+                method: "GET",
+                dataType: "json",
+                data: $form.serializeObject(),
+                success: function(){
+                    $('#form-sub .abs-cent').html('<h3>Thank you for your interest!</h3><p>More info coming soon...</p>').fadeTo("slow", 1);
+
+                }
             });
         }
-    });
+    
     })
 });
