@@ -46,7 +46,6 @@ window.addEventListener('resize', function(event){
     (function() {
 
         var spans = $("#above-fold h1 span span"),
-        // var spans = $("#above-fold h1 span"),
             quoteIndex = -1;
 
         
