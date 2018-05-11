@@ -601,6 +601,8 @@ nav #container-fluid{
  }
 
  @media screen and (min-width:768px){
+     
+     nav { background-color: transparent;}
 
     nav img{
         max-width: 140px;
