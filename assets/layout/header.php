@@ -20,7 +20,7 @@
                         <p>Helping people discover the plant-based products we know they'll love.</p>
                         <br />
                         <h3>Contact</h3> 
-                        <p><a href="mailto:info@plantbase.app">info@plantbase.app</a></p>
+                        <p><a class="link-email" href="mailto:info@plantbase.app">info@plantbase.app</a></p>
                     </div>
                 </div>
         </div>
