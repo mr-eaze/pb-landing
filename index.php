@@ -25,12 +25,12 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/jquery.fullpage.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">     
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    
+
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -45,15 +45,27 @@
         <div class="col-12 col-md-6" id="form-sub">
             <div class="abs-cent">
                 <h1 class="quote"><span class="quote-container"><span>Find</span><span>Like</span><span>Share</span><span>Get</span></span> it.</h1>
-                <!-- <h1><span>Find</span><span>Like</span><span>Share</span><span>Get</span> it.</h1> -->
-                <div class="form-container">
-                    <form action="#" class="email-form">
-                        <div class="email-input">
-                            <input type="email" placeholder="email" name="email">
-                        <button id="submit-form">submit</button>
-                        </div>
-                    </form>
+                <div id="mc_embed_signup">
+                <form action="https://app.us10.list-manage.com/subscribe/post?u=50994305d0182d857f8b53390&amp;id=ef7bcaaeef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                <div class="mc-field-group email-input">
+                	<input type="email" placeholder="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                  <input type="submit" value="submit" name="subscribe" id="mc-embedded-subscribe" class="button">
                 </div>
+                	<div id="mce-responses" class="clear">
+                		<div class="response" id="mce-error-response" style="display:none"></div>
+                		<div class="response" id="mce-success-response" style="display:none"></div>
+                	</div>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_50994305d0182d857f8b53390_ef7bcaaeef" tabindex="-1" value=""></div>
+                    <div class="clear"></div>
+                    </div>
+                </form>
+                </div>
+                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                <!--End mc_embed_signup-->
+
+
             </div>
             <?php include (realpath(dirname(__FILE__)."/assets/layout/footer-desktop.php")); ?>
 

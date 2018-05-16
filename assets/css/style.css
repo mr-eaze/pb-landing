@@ -1,10 +1,10 @@
 #pbase{
     height: 100vh;
-    
+
 }
 
 nav{
-    background-color: #fff;    
+    background-color: #fff;
     left: 0;
     overflow: hidden;
     position: fixed;
@@ -40,7 +40,7 @@ nav .logo{
     cursor: default;
     font-family: 'Roboto', sans-serif;
     font-size: 32px;
-    font-weight: 100;  
+    font-weight: 100;
     margin-bottom: 0;
     padding-top: 10px;
 }
@@ -67,7 +67,7 @@ nav #container-fluid{
 
 }
 #nav-icon3{
-    cursor: pointer;    
+    cursor: pointer;
     float:right;
     height: 26px;
     position: relative;
@@ -84,7 +84,7 @@ nav #container-fluid{
     width: 25px;
     z-index: 100;
   }
-  
+
 #nav-icon3 span{
     background: #66CC99;
     border-radius: 9px;
@@ -120,21 +120,21 @@ nav #container-fluid{
 #nav-icon3 span:nth-child(1) {
     top: 0px;
   }
-  
+
   #nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
     top: 8px;
   }
-  
+
   #nav-icon3 span:nth-child(4) {
     top: 16px;
   }
-  
+
   #nav-icon3.open span:nth-child(1) {
     left: 50%;
     top: 10px;
     width: 0%;
   }
-  
+
   #nav-icon3.open span:nth-child(2) {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -142,7 +142,7 @@ nav #container-fluid{
     transform: rotate(45deg);
 
   }
-  
+
   #nav-icon3.open span:nth-child(3) {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -150,7 +150,7 @@ nav #container-fluid{
     transform: rotate(-45deg);
 
   }
-  
+
   #nav-icon3.open span:nth-child(4) {
     left: 50%;
     top: 18px;
@@ -191,7 +191,7 @@ nav #container-fluid{
     text-align: center;
 
   }
-  
+
 
 
 /* =======ABOVE FOLD======= */
@@ -372,7 +372,7 @@ nav #container-fluid{
     border: 1px solid red;
 }
 
-.email-input button{
+.email-input #mc-embedded-subscribe{
     border: 0 solid transparent;
     border-bottom: 1px solid #66CC99;
     border-top-left-radius: 0px;
@@ -381,23 +381,50 @@ nav #container-fluid{
     border-bottom-right-radius: 3px;
     color: #fff;
     float: left;
-    width: 40%;
     height:40px;
+    line-height: 0;
+    width: 40%;
 }
 
-.body-snb button{
+div.mce_inline_error, div.mce-success-response{
+  background-color: #fff !important;
+  font-weight: 400 !important;
+  color: #000 !important;
+  font-size: 80%;
+  padding-left: 0 !important;
+  padding-top: 10px !important;
+}
+
+.body-snb div.mce_inline_error, .body-snb div.mce-success-response{
+    color: #66CC99 !important;
+
+}
+.body-cne div.mce_inline_error, .body-cne div.mce-success-response{
+    color: #55cbe7 !important;
+
+}
+.body-bng div.mce_inline_error, .body-bng div.mce-success-response{
+    color: #666c99 !important;
+
+}
+.body-enf div.mce_inline_error, .body-enf div.mce-success-response{
+    color: #f1cf5a !important;
+
+}
+
+.body-snb #mc-embedded-subscribe{
     background-color: #66CC99;
     border-bottom: 1px solid #66CC99;
 }
-.body-cne button{
+.body-cne #mc-embedded-subscribe{
     background-color: #55cbe7;
     border-bottom: 1px solid #55cbe7;
 }
-.body-bng button{
+.body-bng #mc-embedded-subscribe{
     background-color: #666c99;
     border-bottom: 1px solid #666c99;
 }
-.body-enf button{
+.body-enf #mc-embedded-subscribe{
     background-color: #f1cf5a;
     border-bottom: 1px solid #f1cf5a;
 }
@@ -557,25 +584,25 @@ nav #container-fluid{
     text-align: center;
 
  }
- 
+
  :-moz-placeholder { /* Firefox 18- */
     color: #b8b8b8 !important;
     font-weight: 300;
-    text-align: center;  
+    text-align: center;
 
  }
- 
+
  ::-moz-placeholder {  /* Firefox 19+ */
     color: #b8b8b8 !important;
     font-weight: 300;
-    text-align: center;  
+    text-align: center;
 
  }
- 
- :-ms-input-placeholder {  
+
+ :-ms-input-placeholder {
     color: #b8b8b8 !important;
     font-weight: 300;
-    text-align: center; 
+    text-align: center;
 
  }
 
@@ -584,12 +611,12 @@ nav #container-fluid{
  }
 
  @media screen and (min-width:768px){
-     
+
      nav { background-color: transparent;}
 
     nav img{
         max-width: 140px;
-    
+
     }
 
     #above-fold #hero, #above-fold #form-sub{
@@ -607,7 +634,7 @@ nav #container-fluid{
 
     #above-fold h1{
         font-size: 39px;
-    
+
     }
 
     #product #product-shot{
@@ -621,10 +648,10 @@ nav #container-fluid{
  }
 
  @media screen and (min-width:992px){
-     
+
     #above-fold h1{
         font-size: 45px;
-    
+
     }
 
     #product #product-shot{
