@@ -31,7 +31,33 @@ window.addEventListener('resize', function(event){
             }
         }
     });
+    $('#mc-embedded-subscribe').on('click', function(){
+      setTimeout(checkSuccess, 500)
+    })
 
+    function checkSuccess() {
+      var checkExist = setInterval(function() {
+        if ($('.mce_inline_error').is(':visible')){
+          clearInterval(checkExist);
+        } else if ($('#mce-success-response').is(':visible')){
+          clearInterval(checkExist);
+          $("#form-sub .abs-cent" ).fadeTo( "slow" , 0, function() {
+            $('#form-sub .abs-cent').html('<h3>Thank you for your interest!</h3><p>More info coming soon...</p>').fadeTo("slow", 1);
+          });
+        } else {
+        }
+      }, 300)
+    }
+
+    // function checkSuccess(){
+    //   if ($('.mce_inline_error').is(':visible')){
+    //     console.log('no')
+    //   } else if ($('.mce-success-response').is(':visible')){
+    //     console.log('Cool')
+    //   } else {
+    //
+    //   }
+    // }
     $(function() {
         $(window).on("scroll", function() {
             if($(window).scrollTop() >= (hero.top - 50)) {
