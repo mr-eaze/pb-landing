@@ -46,18 +46,9 @@ window.addEventListener('resize', function(event){
           });
         } else {
         }
-      }, 300)
+      }, 100)
     }
 
-    // function checkSuccess(){
-    //   if ($('.mce_inline_error').is(':visible')){
-    //     console.log('no')
-    //   } else if ($('.mce-success-response').is(':visible')){
-    //     console.log('Cool')
-    //   } else {
-    //
-    //   }
-    // }
     $(function() {
         $(window).on("scroll", function() {
             if($(window).scrollTop() >= (hero.top - 50)) {

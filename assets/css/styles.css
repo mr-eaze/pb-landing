@@ -386,7 +386,7 @@ nav #container-fluid{
     width: 40%;
 }
 
-div.mce_inline_error, div.mce-success-response{
+div.mce_inline_error{
   background-color: #fff !important;
   font-weight: 400 !important;
   color: #000 !important;
@@ -395,19 +395,24 @@ div.mce_inline_error, div.mce-success-response{
   padding-top: 10px !important;
 }
 
-.body-snb div.mce_inline_error, .body-snb div.mce-success-response{
+div#mce-success-response{
+  position: absolute !important;
+  color: transparent !important;
+}
+
+.body-snb div.mce_inline_error{
     color: #66CC99 !important;
 
 }
-.body-cne div.mce_inline_error, .body-cne div.mce-success-response{
+.body-cne div.mce_inline_error{
     color: #55cbe7 !important;
 
 }
-.body-bng div.mce_inline_error, .body-bng div.mce-success-response{
+.body-bng div.mce_inline_error{
     color: #666c99 !important;
 
 }
-.body-enf div.mce_inline_error, .body-enf div.mce-success-response{
+.body-enf div.mce_inline_error{
     color: #f1cf5a !important;
 
 }
