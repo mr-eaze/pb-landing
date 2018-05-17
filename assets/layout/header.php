@@ -12,15 +12,22 @@
                     <span></span>
                     <span></span>
                 </div>
-                
+
             </div>
                 <div class="nav-side">
                     <div class="abs-cent col-10">
                         <h3>Our Mission</h3>
                         <p>Helping people discover the plant-based products we know they'll love.</p>
                         <br />
-                        <h3>Contact</h3> 
+                        <h3>Contact</h3>
                         <p><a class="link-email" href="mailto:info@plantbase.app">info@plantbase.app</a></p>
+                    </div>
+                    <div class="footer d-md-none footer-mobile">
+                        <ul>
+                            <!-- <li><a href=""><i class="fab fa-facebook-f"></i></a></li> -->
+                            <li><a class="link-instagram" href="//www.instagram.com/plantbase.app/"><i class="fab fa-instagram"></i></a></li>
+                            <!-- <li><a href=""><i class="fab fa-twitter"></i></a></li> -->
+                        </ul>
                     </div>
                 </div>
         </div>
