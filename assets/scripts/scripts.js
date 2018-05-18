@@ -141,38 +141,5 @@ window.addEventListener('resize', function(event){
         }
     })
 
-    // var $form   =   $('form.email-form'),
-    //     url     = 'https://script.google.com/macros/s/AKfycbw8ZxUvbGf2vK3yWHlhfYh8IJtwyCAJGdqquFSqL9iAp56YbuA/exec',
-    //     re      = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    // $('.email-input input').on('input', function(){
-    //     $('.email-input input').removeClass('error');
-    //     $('.error-message').fadeOut();
-    // })
-    // $('#submit-form').on('click', function(e) {
-    // e.preventDefault();
-    //     var email = $('.email-input input').val();
-    //     if(!email.match(re)) {
-    //         $('.email-input input').addClass('error');
-    //         if ($('p.error-message')){
-    //             $('p.error-message').remove();
-    //         }
-    //         $('.email-input').after('<p class="error-message"><small>Please add a valid email address</small>');
-    //         return false;
-    //     } else {
-    //         $( "#form-sub .abs-cent" ).fadeTo( "slow" , 0, function() {
-    //
-    //         });
-    //         var jqxhr = $.ajax({
-    //             url: url,
-    //             method: "GET",
-    //             dataType: "json",
-    //             data: $form.serializeObject(),
-    //             success: function(){
-    //                 $('#form-sub .abs-cent').html('<h3>Thank you for your interest!</h3><p>More info coming soon...</p>').fadeTo("slow", 1);
-    //
-    //             }
-    //         });
-    //     }
-    //
-    // })
+  
 });
