@@ -1,6 +1,7 @@
 $(document).ready(function() {
     var hero    =   $('#hero').offset(),
-        size    =   window.innerWidth;
+        size    =   window.innerWidth,
+        typeformUrl   = '<a class="typeform-share button" href="https://plantbase.typeform.com/to/w1ehAT" data-mode="drawer_left" data-auto-open=true data-hide-headers=true data-hide-footer=true target="_blank"> </a>';
 window.addEventListener('resize', function(event){
     hero    =   $('#hero').offset();
     size    =   window.innerWidth;
@@ -42,7 +43,8 @@ window.addEventListener('resize', function(event){
         } else if ($('#mce-success-response').is(':visible')){
           clearInterval(checkExist);
           $("#form-sub .abs-cent" ).fadeTo( "slow" , 0, function() {
-            $('#form-sub .abs-cent').html('<h3>Thank you for your interest!</h3><p>More info coming soon...</p>').fadeTo("slow", 1);
+            $('#form-sub .abs-cent').html('<h3>Thank you for your interest!</h3><p>More info coming soon...</p>' + typeformUrl).fadeTo("slow", 1);
+            (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })();
           });
         } else {
         }
