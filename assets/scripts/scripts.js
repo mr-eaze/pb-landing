@@ -1,7 +1,6 @@
 $(document).ready(function() {
     var hero    =   $('#hero').offset(),
-        size    =   window.innerWidth,
-        typeformUrl   = '<a class="typeform-share button" href="https://plantbase.typeform.com/to/w1ehAT" data-mode="drawer_left" data-auto-open=true data-hide-headers=true data-hide-footer=true target="_blank"> </a>';
+        size    =   window.innerWidth;
 window.addEventListener('resize', function(event){
     hero    =   $('#hero').offset();
     size    =   window.innerWidth;
@@ -43,8 +42,7 @@ window.addEventListener('resize', function(event){
         } else if ($('#mce-success-response').is(':visible')){
           clearInterval(checkExist);
           $("#form-sub .abs-cent" ).fadeTo( "slow" , 0, function() {
-            $('#form-sub .abs-cent').html('<h3>Thank you for your interest!</h3><p>More info coming soon...</p>' + typeformUrl).fadeTo("slow", 1);
-            (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })();
+            $('#form-sub .abs-cent').html('<h3>Thank you for your interest!</h3><p>More info coming soon...</p>').fadeTo("slow", 1);
           });
         } else {
         }
@@ -141,5 +139,38 @@ window.addEventListener('resize', function(event){
         }
     })
 
-  
+    // var $form   =   $('form.email-form'),
+    //     url     = 'https://script.google.com/macros/s/AKfycbw8ZxUvbGf2vK3yWHlhfYh8IJtwyCAJGdqquFSqL9iAp56YbuA/exec',
+    //     re      = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    // $('.email-input input').on('input', function(){
+    //     $('.email-input input').removeClass('error');
+    //     $('.error-message').fadeOut();
+    // })
+    // $('#submit-form').on('click', function(e) {
+    // e.preventDefault();
+    //     var email = $('.email-input input').val();
+    //     if(!email.match(re)) {
+    //         $('.email-input input').addClass('error');
+    //         if ($('p.error-message')){
+    //             $('p.error-message').remove();
+    //         }
+    //         $('.email-input').after('<p class="error-message"><small>Please add a valid email address</small>');
+    //         return false;
+    //     } else {
+    //         $( "#form-sub .abs-cent" ).fadeTo( "slow" , 0, function() {
+    //
+    //         });
+    //         var jqxhr = $.ajax({
+    //             url: url,
+    //             method: "GET",
+    //             dataType: "json",
+    //             data: $form.serializeObject(),
+    //             success: function(){
+    //                 $('#form-sub .abs-cent').html('<h3>Thank you for your interest!</h3><p>More info coming soon...</p>').fadeTo("slow", 1);
+    //
+    //             }
+    //         });
+    //     }
+    //
+    // })
 });
